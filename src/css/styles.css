@@ -1,0 +1,128 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.container .main-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-header .container-logo {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.robot-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover; /*cobrir a imagem sem distorcer*/
+    animation: float 3s ease-in-out infinite; /* animação de flutuação*/
+}
+
+.container-logo .brand-title {
+    color: #f20612;
+    font-size: 48px;
+    font-weight: 700;  
+}
+
+.brand-header{
+    margin: 20px 0;
+}
+
+.brand-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.search-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 32px;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+.search-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mood-textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    padding: 16px 64px 16px 16px;
+    color: #ffffff;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    transition: all 0.2s ease;  
+}
+
+.mood-textarea:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+.examples {
+    color: #d0d0d0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.examples-title {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.examples-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    opacity: 0.8;
+    margin-left: 15px;
+}
+
+.search-button {
+    background-color: #e50914;
+    width: 100%;
+    padding: 16px 32px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #f40612;
+    box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+}
+
+.results {
+    display: none;
+}
