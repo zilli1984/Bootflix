@@ -2,41 +2,41 @@
 
 /* Small screens */
 @media (max-width: 600px) {
-    .movies-grid {
-      gap: 24px;
-      flex-direction: column;
-      align-items: center;
-    }
+  .movies-grid {
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .robot-image {
+    width: 80px;
+    height: 80px;
   }
   
-  /* Tablet and larger screens */
-  @media (min-width: 768px) {
-    .robot-image {
-      width: 80px;
-      height: 80px;
-    }
-    
-    .brand-title {
-      font-size: 64px;
-    }
-    
-    .brand-subtitle {
-      font-size: 19px;
-    }
-    
-    .search-card {
-      padding: 48px;
-    }
+  .brand-title {
+    font-size: 64px;
   }
   
-  /* Medium screens */
-  @media (max-width: 900px) {
-    .movies-grid {
-      gap: 19px;
-    }
-    
-    .movie-card {
-      width: 90vw;
-      max-width: 400px;
-    }
+  .brand-subtitle {
+    font-size: 19px;
   }
+  
+  .search-card {
+    padding: 48px;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 900px) {
+  .movies-grid {
+    gap: 19px;
+  }
+  
+  .movie-card {
+    width: 90vw;
+    max-width: 400px;
+  }
+}
